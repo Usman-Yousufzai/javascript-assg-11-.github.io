@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+       
+let users = [];
+
+// Prompt the user for the number of users
+let numberOfUsers = parseInt(prompt("Enter the number of users:"));
+
+// Loop to gather user information
+for (let i = 0; i < numberOfUsers; i++) {
+  let user = {}; // Create an empty object for each user
+
+  // Prompt the user for their information
+  user.firstName = prompt("Enter your first name:");
+  user.lastName = prompt("Enter your last name:");
+  user.age = parseInt(prompt("Enter your age:"));
+
+  // Add the user object to the array
+  users.push(user);
+}
+
+// Display the array of users
+console.log(users);
+
+    </script>
+</body>
+</html>
